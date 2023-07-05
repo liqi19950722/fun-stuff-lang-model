@@ -1,5 +1,6 @@
 package io.github.lq.fun.stuff.lang.model.types;
 
+import jakarta.enterprise.lang.model.types.Type;
 import jakarta.enterprise.lang.model.types.WildcardType;
 
 import java.lang.reflect.AnnotatedWildcardType;
@@ -15,7 +16,7 @@ public class WildcardTypeImpl extends TypeImpl implements WildcardType {
     }
 
     @Override
-    public jakarta.enterprise.lang.model.types.Type upperBound() {
+    public Type upperBound() {
         if (!hasUpperBounds) {
             return null;
         }
@@ -24,7 +25,7 @@ public class WildcardTypeImpl extends TypeImpl implements WildcardType {
     }
 
     @Override
-    public jakarta.enterprise.lang.model.types.Type lowerBound() {
+    public Type lowerBound() {
         if (hasUpperBounds) {
             return null;
         }

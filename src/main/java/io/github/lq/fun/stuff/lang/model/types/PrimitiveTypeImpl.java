@@ -1,6 +1,5 @@
 package io.github.lq.fun.stuff.lang.model.types;
 
-import io.github.lq.fun.stuff.reflect.AnnotatedClassTypeDecorator;
 import jakarta.enterprise.lang.model.types.PrimitiveType;
 
 import java.lang.reflect.AnnotatedType;
